@@ -9,6 +9,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: #008000;
+            color: white;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,22 +48,21 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                    <li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settigns</a></li>
+                    <li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav><br><br>
 
-    <div id="banner_image">
-        <div class="container">
-            <div id="banner_content">
-                <h1>We sell lifestyle</h1>
-                <p>Flat 40% OFF on premium brands</p>
-                <a href="products.html" class="btn btn-danger btn-lg active">Shop Now</a>
-            </div>
-        </div>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Success!</strong> Your order is confirmed. Thank you for shopping with us. <a href="products.php">Click
+            here</a> to purchase any other item.
     </div>
+
+    <br><br>
     <footer>
         <div class="container">
             <p>Copyright © Lifestyle Store. All Rights Reserved | Contact Us: +91 9000000000</p>
